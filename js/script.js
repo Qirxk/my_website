@@ -9,9 +9,18 @@
 	var  x = $(document).scrollTop();
 	var encre = $(".fleche");
 	var firstLinks = $("#first_link");
+
+
 $(document).ready(function(){
 	firstLinks.addClass("active");
 	$(".loader-wrapper").fadeOut("slow");
+
+	if ($(document).width() < 991) {
+		$("ul li a").click(function(e){
+			var element = $(".navigation");
+			element.fadeToggle("show");
+		})
+	}
 	$(".scrollDown").click(function(e){
 		e.preventDefault();
 		$('body').animate({scrollTop: (hauteur)}, 1000, 'swing')
