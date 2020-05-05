@@ -400,7 +400,7 @@ section{
   transition: 0.5s;
   font-weight: 500;
 }
-.active .name{
+.active .name span{
   border-bottom: 1px solid #027dc4;
 }
 .navigation li a .name span:before{
@@ -568,6 +568,7 @@ section{
     background: #fff;
     color: #000;
     z-index:-2;
+    overflow: hidden;
 }
 .titre{
   font-weight: bold;
@@ -1333,12 +1334,12 @@ section{
     align-items: center;
     overflow-y: scroll;
   }
-  .navigation li a .icon .fa{
+  /* .navigation li a .icon .fa{
     color: #fff;
   }
   .navigation li a .name span{
     color: #fff;
-  }
+  } */
   .header ul.show{
     display: flex; 
   }
@@ -1475,6 +1476,41 @@ section{
     }
     .img_contact {
       display: none;
+    }
+    .navigation li a {
+      padding: 1em 2em;
+
+    }
+
+    .navigation li a .name {
+      height: 5em;
+    }
+
+    .navigation li a .name span {
+      color: rgb(255, 255, 255);
+      font-size: 2em;
+      line-height: 3em;
+      transition: 0.5s;
+      font-weight: 700;
+    }
+
+    .active .name span {
+      color: #ff0060;
+    }
+
+    .navigation li a .name span:before {
+      content: attr(data-text);
+      position: absolute;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #ff0068;
+      font-weight: 500;
+    }
+
+    .navigation li a:hover .name span {
+      transform: translateY(3em);
     }
   }
    @media (max-width:700px){
