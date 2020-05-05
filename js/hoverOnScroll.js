@@ -9,10 +9,16 @@ window.addEventListener("scroll", function (event) {
         let section = document.querySelector(link.hash)
 
         if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-            console.log(link)
+            for(var i = 0; i<link.clientHeight; i++){
+                link.classList.remove('active')
+            } 
             link.classList.add('active')
         } else {
             link.classList.remove('active')
         }
     })
 })
+// window.on("load", function(){
+//     var firstLinks = document.getElementsById("first_link")
+//     firstLinks.classList.add("active")
+// })

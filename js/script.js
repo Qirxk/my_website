@@ -8,7 +8,9 @@
 	var hauteurnav = $(".header").height();
 	var  x = $(document).scrollTop();
 	var encre = $(".fleche");
+	var firstLinks = $("#first_link");
 $(document).ready(function(){
+	firstLinks.addClass("active");
 	$(".loader-wrapper").fadeOut("slow");
 	$(".scrollDown").click(function(e){
 		e.preventDefault();
