@@ -52,13 +52,13 @@
 	<div class="loader-wrapper">
 		<span class="loader"><span class="loader-inner"></span></span>
 	</div>
-	<section>
+	<section id="home">
 		<nav class="header attend">
 			<h2 class="logo">GRAPHIX</h2>
 			 	<i class="fa fa-bars x2" onclick="menuToggle()"></i>
 			<ul class="navigation">
 				<li>
-					<a href="#" class="menu-lien active">
+					<a href="#home" class="menu-lien active">
 						<!-- <div class="icon">
 							<i class="fa fa-home emoji"></i>
 							<i class="fa fa-home"></i>
@@ -142,7 +142,8 @@
 	</span>
 	<div class="suite" style="color: black">
 <!-- Partie About -->
-	<div class="aboutme" id="about-me">
+	<div id="about-me">
+	<div class="aboutme" >
 		<div class="phrase" data-aos="fade-up" data-aos-delay="100">
 			ABOUT ME
 		</div>
@@ -179,6 +180,7 @@
 			 	</div>
 		</div>
 	</div>
+	
 <!-- Skills -->
 	<div class="skills" data-aos="fade" data-aos-delay="100">
 		<p data-aos="fade" data-aos-delay="150">MY SKILLS</p>
@@ -257,6 +259,7 @@
 			</div>
 		</div>
 	</div>
+	
 <!-- Resume -->
 	<div class="resume">
 		<p data-aos="fade">MY RESUME</p>
@@ -356,10 +359,10 @@
 		</div>
 	</div>
 </div>
-
-
+</div>
+<div id="creation">
 	<!-- Partie PortFolio -->
-		<p class="titre" data-aos="fade" id="creation">PORTFOLIO</p>
+		<p class="titre" data-aos="fade">PORTFOLIO</p>
 		<div class="conteneur">
 			<div class="contenu" data-aos="fade-up" data-aos-delay="100">
 				<div class="images">
@@ -556,7 +559,8 @@
 			</div>
 		</div>
 	</div>
-
+</div>
+<div id="contact">
 <!-- Partner -->
 	<div class="partner">
 		<p data-aos="fade">PARTNER</p>
@@ -609,7 +613,7 @@
 		</div>
 	</div>
 		<div class="bg-light">
-			<div id="contact" class="container">
+			<div class="container">
 				<div class="row" data-aos="fade">
 					<div class="col-12 text-center">
 						<p class="contact_p">CONTACT ME</p>
@@ -729,7 +733,8 @@
 	            			</div>
 	            		</div>
 	            	</div>
-	            </footer>
+				</footer>
+				</div>
 	</div>
 	<script src="framework/jquery/jquery-3.3.1.min.js"></script>
     <script src="js/migrate.js" ></script>
@@ -745,5 +750,6 @@
 	<script src="framework/fancybox/js/fancybox.js" ></script>
 	<script src="framework/jquery/sticky.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/hoverOnScroll.js"></script>
 </body>
 </html>
