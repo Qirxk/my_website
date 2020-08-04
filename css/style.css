@@ -1167,7 +1167,7 @@ section{
       width: 250px;
       height: 300px;
     }
-    .boxpart1, .boxpart2, .boxpart3{
+    .boxpart1{
       margin: 2em;
       /*transform: translate(-50%,-50%);*/
       background: #fff;
@@ -1190,13 +1190,24 @@ section{
     background: #000;
 
   }
-   .boxpart1:hover .imgBx, .boxpart2:hover .imgBx, .boxpart3:hover .imgBx{
+  .boxpart:hover .boxpart1 {
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: 0.5;
+  }
+
+  .boxpart .boxpart1:hover {
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+  }
+   .boxpart1:hover .imgBx{
     transform: translateY(-70px);
   }
   .imgBx img{
     transition: 0.5s;
   }
-  .boxpart1:hover .imgBx img, .boxpart2:hover .imgBx img,.boxpart3:hover .imgBx img{
+  .boxpart1:hover .imgBx img{
     opacity: 0.5;
   }
 
@@ -1227,32 +1238,32 @@ section{
     transform: translateY(100px);
     opacity: 0;
   }
-  .boxpart1 .social-icon li a .fab, .boxpart2 .social-icon li a .fab, .boxpart3 .social-icon li a .fab{
+  .boxpart1 .social-icon li a .fab{
     transition: 0.5s;
     line-height: 40px;
     font-size: 15px;
   }
-  .boxpart1 .social-icon li a:hover .fab, .boxpart2 .social-icon li a:hover .fab, .boxpart3 .social-icon li a:hover .fab{
+  .boxpart1 .social-icon li a:hover .fab{
     transform: rotateY(360deg);
   }
 
-  .boxpart1:hover .social-icon li a, .boxpart2:hover .social-icon li a, .boxpart3:hover .social-icon li a{
+  .boxpart1:hover .social-icon li a{
     transform: translateY(0px);
     opacity: 1;
   }
-  .boxpart1:hover .social-icon li:nth-child(1) a, .boxpart2:hover .social-icon li:nth-child(1) a, .boxpart3:hover .social-icon li:nth-child(1) a{
+  .boxpart1:hover .social-icon li:nth-child(1) a{
     transition-delay: 0s;
   }
-  .boxpart1:hover .social-icon li:nth-child(2) a, .boxpart2:hover .social-icon li:nth-child(2) a, .boxpart3:hover .social-icon li:nth-child(2) a{
+  .boxpart1:hover .social-icon li:nth-child(2) a{
     transition-delay: 0.2s;
   }
-  .boxpart1:hover .social-icon li:nth-child(3) a, .boxpart2:hover .social-icon li:nth-child(3) a, .boxpart3:hover .social-icon li:nth-child(3) a{
+  .boxpart1:hover .social-icon li:nth-child(3) a{
     transition-delay: 0.4s;
   }
-  .boxpart1:hover .social-icon li:nth-child(4) a, .boxpart2:hover .social-icon li:nth-child(4) a, .boxpart3:hover .social-icon li:nth-child(4) a{
+  .boxpart1:hover .social-icon li:nth-child(4) a{
     transition-delay: 0.6s;
   }
-  .boxpart1:hover .social-icon li:nth-child(5) a, .boxpart2:hover .social-icon li:nth-child(5) a, .boxpart3:hover .social-icon li:nth-child(5) a{
+  .boxpart1:hover .social-icon li:nth-child(5) a{
     transition-delay: 0.8s;
   }
 
